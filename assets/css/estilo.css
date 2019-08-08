@@ -1,0 +1,168 @@
+/*CSS Reset */
+*{
+  padding:0; margin: 0;
+  box-sizing:border-box;
+}
+/* Cabeçalho */
+.header{
+  background-color: #c0392b;
+  background-image: linear-gradient(#C0392b, rgb(255, 45, 45))
+}
+.header--title{
+  color: white;
+  text-shadow: 0.5px 0.5px 1px black;
+  font-family: 'Roboto', sans-serif;
+  font-size: 40px;
+  padding: 30px;
+  text-align: center;
+  
+}
+  .header--title-bgwhite{
+    background-color: white;
+    color: #c0392b;
+    font-family: 'Open Sans', sans-serif;
+    padding: 4px;
+    border-radius: 10px; 
+  }
+
+/* Capa da série página principal */
+.serie{
+  text-align: center;
+}
+  .serie--title{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 28px;
+    padding: 10px 0 2px;
+  }
+  .serie--genre{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color:#A9A4A4;
+    display:block;
+    padding: 2px 0 10px;
+    
+  }
+  .serie--image{
+    display:block;
+    max-width: 328px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  .serie--readmore{
+    font-family: 'Roboto', sans-serif;
+    color:white;
+    background-color: #c0392b;
+    text-decoration: none;
+    display:block;
+    padding: 5px;
+    margin: 10px auto;
+    max-width: 330px;
+    border-radius: 6px;
+  }
+    .serie--readmore:hover{
+      background-color: #E74C3C;
+    }
+/* Serie Detail */
+.seriedetail{
+  text-align: center;
+}
+  .seriedetail--title{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 28px;
+    padding: 10px 0 2px;
+  }
+  .seriedetail--genre{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color:#A9A4A4;
+    display:block;
+    padding: 2px 0 10px;
+    
+  }
+  .seriedetail--image{
+    display:block;
+    max-width: 328px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  .seriedetail--watchtrailer{
+    font-family: 'Roboto', sans-serif;
+    color:black;
+    background-color: #f5e400;
+    text-decoration: none;
+    display:block;
+    padding: 5px;
+    margin: 10px auto;
+    max-width: 328px;
+    border-radius: 6px;
+  }
+  .seriedetail--watchtrailer:hover{
+      background-color: #f5e50098;
+    }
+  .seriedetail--text{
+    font-size: 18px;
+    font-family: 'Roboto',sans-serif;
+    text-align: justify;
+    max-width: 328px;
+    margin: 15px auto;
+  }
+/* Avaliação */
+.serieavaliation{
+  background-color: #EEEEEE;
+  color: rgb(1, 7, 68);
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  margin: 10px auto;
+  
+}
+.serieavaliation--title{
+  font-family: 'Open Sans', sans-serif;
+    font-size: 28px;
+    padding: 10px 0 10px;
+    text-align: center
+}
+.serieavaliation--image{
+    display:block;
+    text-align: center;
+    max-width: 328px;
+    margin: 15px auto;
+}
+.serieavaliation--percent{
+  color: rgb(116, 189, 7);
+  font-size: 72px;
+  text-align: center;
+  max-width: 328px;
+  margin: 15px auto;
+}
+.serieavaliation--share{
+  text-align: center;
+  padding: 30px;
+  font-size: 26px;
+
+}
+.serieavaliation--shareimages{
+
+  margin: 20px 35px;
+
+}
+/* Rodapé */
+.footer{
+  background-color: #EEEEEE;
+  color: #C0392B;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+}
+  .footer--image{
+    width: 25px;
+    height: 25px;
+    margin-top: 5px;
+    margin-right: 5px;
+
+  }
+  .footer--element{
+    padding: 20px;
+  }
