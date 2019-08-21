@@ -13,11 +13,12 @@
       background-color: rgb(102, 99, 252);
       list-style: none;
       display: flex;
+      flex-direction: column
       
     }
-    @media (max-width: 600px) {
+    @media (min-width: 600px) {
       .menu{
-        flex-direction: column;
+        flex-direction: row;
       }
     }
     .menu__item > a{

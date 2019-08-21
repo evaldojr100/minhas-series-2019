@@ -3,12 +3,16 @@
   padding:0; margin: 0;
   box-sizing:border-box;
 }
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
 /* Cabeçalho */
 .header{
   background-color: #c0392b;
   background-image: linear-gradient(#C0392b, rgb(255, 45, 45))
 }
-.header--title{
+.header__title{
   color: white;
   text-shadow: 0.5px 0.5px 1px black;
   font-family: 'Roboto', sans-serif;
@@ -17,14 +21,48 @@
   text-align: center;
   
 }
-  .header--title-bgwhite{
+@media (min-width:600px){
+  .header__title{
+    text-align: left;
+    
+  }
+
+}
+  .header__title--bgwhite{
     background-color: white;
     color: #c0392b;
     font-family: 'Open Sans', sans-serif;
     padding: 4px;
     border-radius: 10px; 
   }
+/*Menu*/
+.menu{
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width:600px){
+  .menu{
+    flex-direction: row;
+  }
+}
+.menu__item >a{
+  padding:10px;
+  text-decoration: none;
+  color:#EEEEEE;
+  display: block;
+}
+.menu__item >a:hover{
+  color: #C0392B;
+  background-color: #EEEEEE;
+  
+}
 
+}
+.menu__item{
+
+}
 /* Capa da série página principal */
 .serie{
   text-align: center;
