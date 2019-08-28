@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="PT-BR">
+
 <head>
 
   <meta charset="UTF-8">
   <title>Minhas Séries</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="assets/css/estilo.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <header class="header">
-    <div class="header__title container">Minhas <span class="header__title--bgwhite">Séries</span>
+    <div class="header__title container">Minhas <span class="header__title--bgwhite ">Séries</span>
     </div>
     <nav>
       <ul class="menu container">
@@ -25,25 +26,68 @@
   </header>
 
   <main>
-<section class="serie">
-  <h1 class="serie--title">Game of Thrones</h1>
-  <span class="serie--genre">Fantasia</span>
-  <img class="serie--image" src="assets/images/capas/game-of-thrones.jpg" alt="Capa da série Game of Thrones com Rei da noite">
-  <a href="#" class="serie--readmore">Leia mais</a>
-</section>
+    <div class="series container">
+      <section class="serie">
+        <h1 class="serie__title">Game of Thrones</h1>
+        <span class="serie__genre">Fantasia</span>
+        <img class="serie__image" src="assets/images/capas/game-of-thrones.jpg"
+          alt="Capa da série Game of Thrones com Rei da noite">
+        <a href="#" class="serie__readmore">Leia mais</a>
+      </section>
+
+      <section class="serie">
+          <h1 class="serie__title">Breaking Bad</h1>
+          <span class="serie__genre">Fantasia</span>
+          <img class="serie__image" src="assets/images/capas/breaking-bad.jpg"
+            alt="Capa da série Game of Thrones com Rei da noite">
+          <a href="#" class="serie__readmore">Leia mais</a>
+        </section>
+
+        <section class="serie">
+            <h1 class="serie__title">House of Cards</h1>
+            <span class="serie__genre">Fantasia</span>
+            <img class="serie__image" src="assets/images/capas/house-of-cards.jpg"
+              alt="Capa da série Game of Thrones com Rei da noite">
+            <a href="#" class="serie__readmore">Leia mais</a>
+          </section>
+
+          <section class="serie">
+              <h1 class="serie__title">Stranger Things</h1>
+              <span class="serie__genre">Fantasia</span>
+              <img class="serie__image" src="assets/images/capas/stranger-things.jpg"
+                alt="Capa da série Game of Thrones com Rei da noite">
+              <a href="#" class="serie__readmore">Leia mais</a>
+            </section>
+
+            <section class="serie">
+                <h1 class="serie__title">The Walking Dead</h1>
+                <span class="serie__genre">Fantasia</span>
+                <img class="serie__image" src="assets/images/capas/the-walking-dead.jpg"
+                  alt="Capa da série The Walking Dead">
+                <a href="#" class="serie__readmore">Leia mais</a>
+              </section>
+    </div>
+    
   </main>
 
   <footer class="footer">
-    <div class="footer--element container">Receba as novidades:</div>
-    <div class="footer--element container">
+    <div class="footer__element container">Receba as novidades: 
+        <div>
+          <input class="form-email" type="text" placeholder="fulano@email.com">
+          <input class="btn-salvar" type="submit" value="OK">
+        </div> 
+    </div>        
+    
+    <div class="footer__element container"><div>
       <div>Siga-nos em nossas redes sociais:</div>
-    <div>
-      <img src="assets/images/facebook.svg" alt="" class="footer--image">
-      <img src="assets/images/twitter.svg" alt="" class="footer--image">
-      <img src="assets/images/youtube.svg" alt="" class="footer--image">
+      <div>
+        <img src="assets/images/facebook.svg" alt="" class="footer__image">
+        <img src="assets/images/twitter.svg" alt="" class="footer__image">
+        <img src="assets/images/youtube.svg" alt="" class="footer__image">
+      </div>
     </div>
-  </div>
 
   </footer>
 </body>
+
 </html>

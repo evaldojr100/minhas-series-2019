@@ -10,7 +10,15 @@
 /* Cabeçalho */
 .header{
   background-color: #c0392b;
-  background-image: linear-gradient(#C0392b, rgb(255, 45, 45))
+  background-image: linear-gradient(#C0392b, rgb(255, 45, 45));
+  display:flex;
+  flex-direction: column;
+}
+@media(min-width:600px){
+  .header{
+    flex-direction: column-reverse;
+    
+  }
 }
 .header__title{
   color: white;
@@ -24,9 +32,10 @@
 @media (min-width:600px){
   .header__title{
     text-align: left;
+    width: 1200px;
+    
     
   }
-
 }
   .header__title--bgwhite{
     background-color: white;
@@ -41,10 +50,12 @@
   text-decoration: none;
   display: flex;
   flex-direction: column;
+  
 }
 @media (min-width:600px){
   .menu{
     flex-direction: row;
+    padding-left: 20px;   
   }
 }
 .menu__item >a{
@@ -59,20 +70,26 @@
   
 }
 
+/*Pagina Principal */
+.series{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  
 }
-.menu__item{
 
-}
 /* Capa da série página principal */
 .serie{
   text-align: center;
+  padding: 10px;
+  margin: 0 auto;
 }
-  .serie--title{
+  .serie__title{
     font-family: 'Open Sans', sans-serif;
     font-size: 28px;
     padding: 10px 0 2px;
   }
-  .serie--genre{
+  .serie__genre{
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     color:#A9A4A4;
@@ -80,7 +97,7 @@
     padding: 2px 0 10px;
     
   }
-  .serie--image{
+  .serie__image{
     display:block;
     max-width: 328px;
     margin: 0 auto;
@@ -88,7 +105,7 @@
     border-radius: 5px;
     margin-top: 10px;
   }
-  .serie--readmore{
+  .serie__readmore{
     font-family: 'Roboto', sans-serif;
     color:white;
     background-color: #c0392b;
@@ -99,19 +116,19 @@
     max-width: 330px;
     border-radius: 6px;
   }
-    .serie--readmore:hover{
+    .serie__readmore:hover{
       background-color: #E74C3C;
     }
 /* Serie Detail */
 .seriedetail{
   text-align: center;
 }
-  .seriedetail--title{
+  .seriedetail__title{
     font-family: 'Open Sans', sans-serif;
     font-size: 28px;
     padding: 10px 0 2px;
   }
-  .seriedetail--genre{
+  .seriedetail__genre{
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     color:#A9A4A4;
@@ -119,7 +136,7 @@
     padding: 2px 0 10px;
     
   }
-  .seriedetail--image{
+  .seriedetail__image{
     display:block;
     max-width: 328px;
     margin: 0 auto;
@@ -127,7 +144,7 @@
     border-radius: 5px;
     margin-top: 10px;
   }
-  .seriedetail--watchtrailer{
+  .seriedetail__watchtrailer{
     font-family: 'Roboto', sans-serif;
     color:black;
     background-color: #f5e400;
@@ -138,10 +155,10 @@
     max-width: 328px;
     border-radius: 6px;
   }
-  .seriedetail--watchtrailer:hover{
+  .seriedetail__watchtrailer:hover{
       background-color: #f5e50098;
     }
-  .seriedetail--text{
+  .seriedetail__text{
     font-size: 18px;
     font-family: 'Roboto',sans-serif;
     text-align: justify;
@@ -157,50 +174,91 @@
   margin: 10px auto;
   
 }
-.serieavaliation--title{
+.serieavaliation__title{
   font-family: 'Open Sans', sans-serif;
     font-size: 28px;
     padding: 10px 0 10px;
     text-align: center
 }
-.serieavaliation--image{
+.serieavaliation__image{
     display:block;
     text-align: center;
     max-width: 328px;
     margin: 15px auto;
 }
-.serieavaliation--percent{
+.serieavaliation__percent{
   color: rgb(116, 189, 7);
   font-size: 72px;
   text-align: center;
   max-width: 328px;
   margin: 15px auto;
 }
-.serieavaliation--share{
+.serieavaliation__share{
   text-align: center;
   padding: 30px;
   font-size: 26px;
 
 }
-.serieavaliation--shareimages{
+.serieavaliation__shareimages{
 
   margin: 20px 35px;
 
 }
 /* Rodapé */
 .footer{
-  background-color: #EEEEEE;
+  background-color:#EEEEEE;
   color: #C0392B;
   font-family: 'Roboto', sans-serif;
   font-size: 12px;
+    
 }
-  .footer--image{
+@media(min-width:600px){
+  .footer{
+    display: flex;
+    align-content: flex-start;
+
+  }
+}
+  .footer__image{
     width: 25px;
     height: 25px;
     margin-top: 5px;
     margin-right: 5px;
+    
 
   }
-  .footer--element{
+  .footer__element{
     padding: 20px;
+    
   }
+.form-email{
+  background: #EEEEEE;
+  border: 1px solid #C0392B;
+  box-sizing: border-box;
+  border-radius: 5px 0px 0px 5px;
+  height: 33px;
+  text-indent: 10px;
+
+}
+
+.btn-salvar{
+  background: #C0392B;
+  color:white;
+  border: 1px solid #C0392B;
+  box-sizing: border-box;
+  border-radius: 0px 5px 5px 0px;
+  width: 50px;
+  height: 33px;
+  margin-left: -10px;
+  margin-top: 8px;
+  
+
+  
+}
+.btn-salvar:hover{
+  background: white;
+  color:#C0392B;
+  
+
+  
+}
